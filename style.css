@@ -1,0 +1,56 @@
+.Lettuce{
+    margin-left: 600px;
+}
+.bowl{
+    position: relative;
+    margin-left: 90px;
+    margin-top: -260px;
+    width: 200px;
+}
+.Russian{
+    position: relative;
+    margin-left: 1100px;
+    margin-top: -263px;
+}
+.logo{
+    position: relative;
+    margin-left: 600px;
+    margin-top: 100px;
+    
+}
+.Main_text{
+    position: relative;
+    margin-left: 645px;
+    white-space: nowrap; 
+}
+.Order{
+    position: relative;
+    margin-left: 655px;
+}
+.Call{
+    position: relative;
+    left: 655px;
+    margin-top: 10px;
+}
+.head_text{
+    position: relative;
+    margin-left: 605px;
+}
+.bowl_button{
+    position: relative;
+    margin-left: 90px;
+    margin-top: 100px;
+}
+.main_menu{
+    position: relative;
+}
+.bowl_button2{
+    position: relative;
+    margin-left: 600px;
+    margin-top: -75px;
+}
+.bowl_button3{
+    position: relative;
+    margin-left: 1100px;
+    margin-top: -75px;
+}

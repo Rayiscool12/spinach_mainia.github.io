@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: green;">
+    
+    <div class="head_text">
+        <header>
+            <h1>Spinach Mainia</h1>
+        </header>
+    </div>
+
+    
+    
+    <p id="demo"></p>
+    <div class="main_menu">
+        <a href="index.html"><button><h1>Go back to home page</h1></button></a>
+    </div>
+    
+   
+    <div class="bowl_button">
+        <button onclick="addToCart()"><h1>Spinach Salad bowl</h1></button>
+    </div> 
+    
+    <div class="bowl_button2">
+        <button onclick="addToCart()"><h1>Lettuce Salad bowl</h1></button>
+    </div> 
+
+    <div class="bowl_button3">
+        <button onclick="addToCart()"><h1>Russian Salad bowl</h1></button>
+    </div>
+   
+   <script>
+        function addToCart() {
+            document.getElementById("demo").innerHTML = "added to cart!";
+            
+        }
+    </script>
+    <div class="Lettuce">
+        <img src="lettuce.jpeg" height="259px">
+    </div>
+
+    <div class="Russian">
+        <img src="Russian.jpeg" height="259px">
+    </div>
+
+    <div class = "bowl">
+        <img src="Bowl.jpeg" height="267.5px">
+    </div>  
+    
+    
+    
+</body>
+</html>
