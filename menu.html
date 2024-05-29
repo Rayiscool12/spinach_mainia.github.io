@@ -30,15 +30,25 @@
     <div class="bowl_button2">
         <button style="background-color: chartreuse; border-style: outset;" onclick="addToCart()"><h1>Lettuce Salad bowl</h1></button>
     </div> 
-
+        
     <div class="bowl_button3">
         <button style="background-color: chartreuse; border-style: outset;" onclick="addToCart()"><h1>Russian Salad bowl</h1></button>
     </div>
+    
    
    <script>
-        function addToCart() {
-            document.getElementById("demo").innerHTML = "added to cart!";
-            
+        async function addToCart() {
+         //document.getElementById("demo").innerHTML = "added to cart!"
+            //console.log("written")
+            //clearInterval()
+            alert("Item added to cart!")
+            await sleep(1)
+         document.getElementById("demo").innerHTML = ""
+         console.log("cool")
+         //document.getElementById("demo").remove();
+        }
+        async function sleep(sec){
+            return new Promise((resolve) => setTimeout(resolve, sec*1000))
         }
     </script>
     <div class="Lettuce">

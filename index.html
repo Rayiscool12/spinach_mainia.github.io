@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Home page </title>
+    <title> Homepage </title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body style="background-color: green; width: 750px;">
     
@@ -17,18 +18,22 @@
     </div>
     
     <p id="demo"></p>
+    <script src="Homepage.js"></script>
 
     <div class="Order">
          <a href="menu.html"><button style="background-color: chartreuse; border-style: outset; height: 100px; width:200px"><h1>Order Now!</h1></button></a>
     </div>
 
    <div class="Call">
-    <button style="background-color: chartreuse; border-style: outset; height: 100px; width: 200px;" onclick="myFunction()"><h1>Call us now!</h1></button>
-   </div>
+    <button style="background-color: chartreuse; border-style: outset; height: 100px; width: 200px;" onclick="myFunction()"><h1>Call us now!</h1></button>   
+   
     <script>
         function myFunction() {
-            document.getElementById("demo").innerHTML = "To call us, dial: 0457892123";
+            //document.getElementById("demo").innerHTML = "To call us, dial: 0457892123";
+            alert("To call us, dial: 0457892123")
         }
     </script>
+
+
 </body>
 </html>
