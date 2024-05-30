@@ -54,3 +54,24 @@
     margin-left: 1100px;
     margin-top: -75px;
 }
+.checkout{
+    position: relative;
+    margin-left: 1250px;
+}
+.checkouttext{
+    size: 50px;
+}
+.Checkouttxt{
+    position: relative;
+    margin-left: 600px;
+    font-size: xx-large;
+}
+.bcm{
+    margin-top: -350px;
+    height: 100px;
+    width: 300px;
+}
+.amm{
+    position: relative;
+    left: 100px;
+}
