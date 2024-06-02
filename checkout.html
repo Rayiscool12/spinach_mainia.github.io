@@ -20,16 +20,19 @@
     <a href="menu.html"><button style="background-color: chartreuse; border-style: outset;"><h1>Go back to menu page</h1></button></a>  
     </div>
     <div class="checkouttext">
-        <label for="fname" style="margin-left: 100px; font-size: xx-large;">Card number:</label>
-        <input type="text" id="fname" name="fname" size="50" maxlength="16" style="margin-top: 200px; font-size: xx-large;"><br><br>
-        <label for="pin" style="font-size: xx-large; margin-left: 102.5px;">CVV:</label>
-        <input type="text" id="pin" name="pin" maxlength="3" size="5" style="font-size: xx-large; margin-left: 100px;"><br><br>
-        <a href="index.html"><input type="submit" value="Submit" style="font-size: xx-large; background-color: chartreuse; border-style: outset;" onclick="checkout()"></a>
-        
-        <script type="text/javascript" src="Homepage.js"></script>
-    
-   </div>
+        <label for="textbox" style="margin-left: 100px; font-size: xx-large;">Card number:</label>
+        <input type="password" placeholder="Please enter your card number" id="textbox" name="textbox" size="40" maxlength="16" style="margin-top: 200px; font-size: xx-large;"><br><br>
+        <label for="textbox" style="margin-left: 100px; font-size: xx-large;">Card holder:</label>
+        <input type="text" id="Cardpname" placeholder="Please enter your name" name="textbox" size="40" maxlength="16" style="margin-top: 00px; font-size: xx-large;"><br><br>
+        <label for="pin" style="font-size: xx-large; margin-left: 102.5px;" text>CVV:</label>
+        <input type="password" placeholder="CVV" id="pin" name="pin" size="5" min="1" maxlength="3"  style="font-size: xx-large; margin-left: 100px;" maxlength="3"><br><br>
 
+        <button name="chout" value="Submit" style="font-size: xx-large; background-color: chartreuse; border-style: outset;"  onclick="checkout()">Place Order</button>
+        
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+
+   
 
    
 </body>

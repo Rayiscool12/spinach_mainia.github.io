@@ -22,22 +22,27 @@
     
     
     <p id="demo"></p>
+    <div class="Cart">
+        <a href="cart.html"><button style="background-color: chartreuse; border-style: outset; margin-bottom: 50px;"><h1>Cart</h1></button></a>
+    </div>
+    
     <div class="main_menu">
         <a href="index.html"><button style="background-color: chartreuse; border-style: outset;" onclick="storage()"><h1>Go back to home page</h1></button></a>
     </div>
     
+
    
 
     <div class="bowl_button">
-        <button style="background-color: chartreuse; border-style: outset;" onclick = "addToCart(), storage()"><h1>Spinach Salad bowl:$5.99</h1></button>
+        <button style="background-color: chartreuse; border-style: outset; font-size: 10.25px; margin-bottom: 20px;" onclick = "addToSpinachCart(), storage(), addToSpinachCart2()"><h1>Spinach Salad bowl:$5.99</h1></button>
     </div> 
     
     <div class="bowl_button2">
-        <button style="background-color: chartreuse; border-style: outset;" onclick="addToCart(), storage()"><h1>Lettuce Salad bowl:$5.99</h1></button>
+        <button style="background-color: chartreuse; border-style: outset; font-size: 10.25px; margin-bottom: 15px;" onclick="addToLettuceCart(), storage()"><h1>Lettuce Salad bowl:$5.99</h1></button>
     </div> 
         
     <div class="bowl_button3">
-        <button style="background-color: chartreuse; border-style: outset;" onclick="addToCart(), storage()"><h1>Russian Salad bowl:$5.99</h1></button>
+        <button style="background-color: chartreuse; border-style: outset; font-size: 10.25px; margin-bottom: 10px;" onclick="addToRussianCart(), storage()"><h1>Russian Salad bowl:$5.99</h1></button>
     </div>
 
    
@@ -58,8 +63,11 @@
         <img src="Bowl.jpeg" height="267.5px">
     </div>  
     
-    <script type="text/javascript" src="Homepage.js"></script>
-    
+
+
+
+    <script type="text/javascript" src="main.js"></script>
+ 
     
 </body>
 </html>

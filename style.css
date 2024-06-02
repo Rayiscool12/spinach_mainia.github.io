@@ -1,9 +1,19 @@
+button:hover {
+    transform: scale(1.2);
+  }
+
+body{
+    background-image: url("Designer (2).jpeg");
+    background-size: 1500px;
+    overflow: hidden;
+}
 .Lettuce{
     margin-left: 600px;
 }
 .bowl{
     position: relative;
     margin-left: 90px;
+    z-index: -1;
     margin-top: -260px;
     width: 200px;
 }
@@ -39,6 +49,8 @@
 .bowl_button{
     position: relative;
     margin-left: 90px;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 10px;
     margin-top: 100px;
 }
 .main_menu{

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body style="background-color: green; width: 750px;">
+    
+    <a href="menu.html"><button style="font-size: xx-large; background-image: url; background-color: chartreuse">back to menu</button></a>
+    <p id="doccool"></p>     
+    <button  onclick="removesalad2()" style=" z-index: 1; font-size: xx-large; background-color: chartreuse;">Remove</button>
+
+    <p id="doccool1"></p>
+    <button  onclick="removesalad1()" style=" z-index: 1; font-size: xx-large; background-color: chartreuse;">Remove</button>
+    <p id="doccool2"></p>
+    <button  onclick="removesalad3()" style=" z-index: 1; font-size: xx-large; background-color: chartreuse;">Remove</button>
+    
+ <script >
+    document.getElementById("doccool").innerHTML = "Amounts of lettuce salads added: "+localStorage.amountOfLettuceSaladsAdded
+    document.getElementById("doccool").style.fontSize = "50px"
+    document.getElementById("doccool").style.color = "black"
+    document.getElementById("doccool1").innerHTML = "Amounts of lettuce salads added: "+localStorage.amountOfLettuceSaladsAdded
+    document.getElementById("doccool1").style.fontSize = "50px"
+    document.getElementById("doccool1").style.color = "black"
+    document.getElementById("doccool2").innerHTML = "Amounts of lettuce salads added: "+localStorage.amountOfLettuceSaladsAdded
+    document.getElementById("doccool2").style.fontSize = "50px"
+    document.getElementById("doccool2").style.color = "black"
+    document.getElementById("doccool1").innerHTML = "Amounts of spinach salads added: "+localStorage.amountOfSpinachSaladsAdded
+    document.getElementById("doccool2").innerHTML = "Amounts of russian salads added: "+localStorage.amountOfRussianSaladsAdded
+
+
+    function removesalad1(){
+        if(localStorage.amountOfSpinachSaladsAdded!="0"&&localStorage.amountOfSaladsAdded != "0"){
+            localStorage.amountOfSaladsAdded -= "1"
+            localStorage.amountOfSpinachSaladsAdded -= "1"
+            console.log("removed!")
+            window.location.reload()
+        }
+    }
+    function removesalad2(){
+        if(localStorage.amountOfLettuceSaladsAdded!="0"&&localStorage.amountOfSaladsAdded != "0"){
+            localStorage.amountOfSaladsAdded -= "1"
+            localStorage.amountOfLettuceSaladsAdded -= "1"
+            console.log("removed!")
+            window.location.reload()
+        }
+    }
+    function removesalad3(){
+        if(localStorage.amountOfRussianSaladsAdded!="0"&&localStorage.amountOfSaladsAdded != "0"){
+            localStorage.amountOfSaladsAdded -= "1"
+            localStorage.amountOfRussianSaladsAdded -= "1"
+            console.log("removed!")
+            window.location.reload()
+        }
+    }
+ </script>
+    
+</body>
+</html>
