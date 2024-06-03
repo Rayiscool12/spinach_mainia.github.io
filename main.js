@@ -35,15 +35,15 @@ async function addToSpinachCart() {
 
 
 
-    async function addToSpinachCart2() {
+async function addToSpinachCart2() {
       
-      //before = amountOfSaladsAdded
-      //alert("Spinach salad added to cart!")
-      amountOfSpinachSaladsAdded++;
+    //before = amountOfSaladsAdded
+    //alert("Spinach salad added to cart!")
+    amountOfSpinachSaladsAdded++;
       
-      document.getElementById("demo").innerHTML = ""
-      console.log("cool")
-      console.log(localStorage.amountOfSpinachSaladsAdded)
+    document.getElementById("demo").innerHTML = ""
+    console.log("cool")
+    console.log(localStorage.amountOfSpinachSaladsAdded)
       if (typeof(Storage) !== "undefined") {
           if (localStorage.amountOfSpinachSaladsAdded) {
 
@@ -59,7 +59,7 @@ async function addToSpinachCart() {
         
         
         
-      }
+}
    
 
 async function addToLettuceCart() {
@@ -87,9 +87,11 @@ async function addToLettuceCart() {
 
 }
 
+
 async function addToRussianCart() {
   amountOfSaladsAdded++;
   before = amountOfSaladsAdded
+
   alert("Russian salad added to cart!")
   amountOfRussianSaladsAdded++;
 
@@ -121,7 +123,7 @@ function checkout(){
         //sleep()
         //console.log(char.textbox.value)
         
-    } else if (localStorage.amountOfSaladsAdded>0 && before1>="15",before2>="2"){
+    } else if (localStorage.amountOfSaladsAdded>0 && before1>="15",before2>="2",before3>="4"){
       
         alert("Order placed!")
         //document.getElementById("chout").href = "index.html"
@@ -144,10 +146,13 @@ async function sleep(sec){
 
 let textbox = document.getElementById("textbox");
 let tb2 = document.getElementById("pin");
+let tb3 = document.getElementById("Cardpname");
 let char;
 let char2;
+let char3;
 let before1;
 let before2;
+let before3;
 
 
 
@@ -160,6 +165,11 @@ tb2.addEventListener("keyup", function(){
     char2 = tb2.value.split("")
     before2 = char2
     console.log(before2.length)
+})
+tb3.addEventListener("keyup", function(){
+    char3 = tb3.value.split("")
+    before3 = char3
+    console.log(before3.length)
 })
 
 
